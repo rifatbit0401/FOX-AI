@@ -13,17 +13,17 @@ public class Main {
 
         String conversationJsonFilePath = "";
         File jsonFile = new File("/home/rifat/Desktop/Data/test.json");
+        List<String> list = new ArrayList<String>();
+        list.add("d1");
+        list.add("d2");
         Conversation conversation = new Conversation();
-        conversation.dialogues.add("d1");
-        conversation.dialogues.add("d2");
+        conversation.conversations.add(list);
+        conversation.conversations.add(list);
 
-        List<Conversation>conversations = new ArrayList<Conversation>();
-        conversations.add(conversation);
-        conversations.add(conversation);
         JsonService jsonService = new JsonService();
-        jsonService.writeJsonFile(jsonFile,conversations);
+        jsonService.writeJsonFile(jsonFile,conversation);
 
-
+        System.out.println(jsonService.readConversaionJsonFile(jsonFile).conversations.get(0).get(0));
 
     }
 }

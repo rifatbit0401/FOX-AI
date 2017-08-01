@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c51c3ffa-15ef-44ff-b2cf-58411d17fc87" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/external jars/jackson-all-1.9.0.jar" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/external jars/jackson-core-2.2.3.jar" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/FOX-AI/com/mcc/rifat/main/Main.class" afterPath="$PROJECT_DIR$/out/production/FOX-AI/com/mcc/rifat/main/Main.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/mcc/rifat/utility/StringService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FOX-AI.iml" afterPath="$PROJECT_DIR$/FOX-AI.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mcc/rifat/main/Main.java" afterPath="$PROJECT_DIR$/src/com/mcc/rifat/main/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mcc/rifat/model/Conversation.java" afterPath="$PROJECT_DIR$/src/com/mcc/rifat/model/Conversation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mcc/rifat/utility/FileService.java" afterPath="$PROJECT_DIR$/src/com/mcc/rifat/utility/FileService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/mcc/rifat/utility/JsonService.java" afterPath="$PROJECT_DIR$/src/com/mcc/rifat/utility/JsonService.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,11 +22,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state relative-caret-position="192">
+              <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#566#580#0" expanded="true" />
+                <element signature="e#411#419#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -36,11 +35,10 @@
       <file leaf-file-name="Conversation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/model/Conversation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            <state relative-caret-position="126">
+              <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#159#167#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -62,11 +60,34 @@
       <file leaf-file-name="JsonService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/utility/JsonService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/utility/FileService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#326#334#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/utility/StringService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,9 +112,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/mcc/rifat/model/Conversation.java" />
         <option value="$PROJECT_DIR$/src/com/mcc/rifat/data/DataLoader.java" />
+        <option value="$PROJECT_DIR$/src/com/mcc/rifat/model/Conversation.java" />
+        <option value="$PROJECT_DIR$/src/com/mcc/rifat/utility/FileService.java" />
         <option value="$PROJECT_DIR$/src/com/mcc/rifat/utility/JsonService.java" />
+        <option value="$PROJECT_DIR$/src/com/mcc/rifat/utility/StringService.java" />
         <option value="$PROJECT_DIR$/src/com/mcc/rifat/main/Main.java" />
       </list>
     </option>
@@ -148,6 +171,20 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="rifat" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IRBaseModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FOX-AI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="rifat" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IRBaseModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FOX-AI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="rifat" type="462c0819:PsiDirectoryNode" />
+              <item name="utility" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -353,34 +390,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/utility/JsonService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/utility/StringService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="198">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/model/Conversation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="63" lean-forward="true" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/model/Conversation.java">
+    <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/utility/FileService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        <state relative-caret-position="300">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#159#167#0" expanded="true" />
+            <element signature="e#326#334#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/utility/JsonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/mcc/rifat/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="192">
+          <caret line="19" column="45" lean-forward="true" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#566#580#0" expanded="true" />
+            <element signature="e#411#419#0" expanded="true" />
           </folding>
         </state>
       </provider>

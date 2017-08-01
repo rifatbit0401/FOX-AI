@@ -1,6 +1,11 @@
 package com.mcc.rifat.utility;
 
+import sun.misc.IOUtils;
+
 import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,4 +28,14 @@ public class FileService {
 
         return lines;
     }
+
+    public byte[] readAllBytes(File file){
+        try {
+            return Files.readAllBytes(Paths.get(file.getPath()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
 }
