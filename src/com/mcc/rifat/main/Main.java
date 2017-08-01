@@ -1,5 +1,6 @@
 package com.mcc.rifat.main;
 
+import com.mcc.rifat.ir.Document;
 import com.mcc.rifat.ir.LuceneUtils;
 import com.mcc.rifat.model.Conversation;
 import com.mcc.rifat.utility.JsonService;
@@ -15,13 +16,12 @@ public class Main {
     public static void main(String[] args){
 
         //testJsonService();
-
-        LuceneUtils luceneUtils = new LuceneUtils();
-        StandardAnalyzer standardAnalyzer = new StandardAnalyzer(Version.LUCENE_30);
-        List<String> tokens = luceneUtils.tokenizeString(standardAnalyzer, "Go to hell!!");
+        List<String>singleConevrsation = new ArrayList<String>();
+        singleConevrsation.add("Hi hello lol!!!");
+        Document document = new Document(singleConevrsation);
 
         for (String token :
-                tokens) {
+                document.getTerms()) {
             System.out.println(token);
         }
     }
