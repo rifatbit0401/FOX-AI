@@ -31,8 +31,12 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             String queryLine = scanner.nextLine();
             queryLines.add(queryLine);
-            searchEngine.search(new Document(queryLines), 0.8);
+            Document resultDocument = searchEngine.search(new Document(queryLines), 0.8);
+            String response = resultDocument.getRawSentences().get(queryLines.size());
+            System.out.println(response);
+            queryLines.add(response);
         }
+
     }
 
     private static void testSimilarityCalculator() {

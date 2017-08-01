@@ -28,7 +28,12 @@ public class SearchEngine {
         for (Document document: documents) {
             if(document.getRawSentences().size()<query.getRawSentences().size())
                 continue;
-            List<String> currentDialogues = document.getRawSentences().subList(0, query.getRawSentences().size()-1);
+
+            List<String> currentDialogues = new ArrayList<String>();
+            for (int i=0; i <query.getRawSentences().size(); i++){
+                String line = document.getRawSentences().get(i);
+                currentDialogues.add(line);
+            }
             Document slicedDocument = new Document(currentDialogues);
             double similarityScore = similarityCalculator.getCosineSimilarityScore(query,slicedDocument);
             if(similarityScore>=similarityThreshold && currentMaxSimilarityScore < similarityScore){
@@ -36,7 +41,7 @@ public class SearchEngine {
                 currentMaxSimilarityScore = similarityScore;
             }
         }
-        System.out.println(mostRelevantDocument);
+
         return mostRelevantDocument;
     }
 
