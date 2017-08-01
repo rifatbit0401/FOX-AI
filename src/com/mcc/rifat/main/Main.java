@@ -2,6 +2,7 @@ package com.mcc.rifat.main;
 
 import com.mcc.rifat.ir.Document;
 import com.mcc.rifat.ir.LuceneUtils;
+import com.mcc.rifat.ir.SimilarityCalculator;
 import com.mcc.rifat.model.Conversation;
 import com.mcc.rifat.utility.JsonService;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
@@ -18,12 +19,11 @@ public class Main {
         //testJsonService();
         List<String>singleConevrsation = new ArrayList<String>();
         singleConevrsation.add("Hi hello lol!!!");
-        Document document = new Document(singleConevrsation);
+        Document document1 = new Document(singleConevrsation);
+        Document document2 = new Document(singleConevrsation);
 
-        for (String token :
-                document.getTerms()) {
-            System.out.println(token);
-        }
+        SimilarityCalculator similarityCalculator = new SimilarityCalculator();
+        System.out.println(similarityCalculator.getCosineSimilarityScore(document1,document2));
     }
 
     private static void testJsonService() {
