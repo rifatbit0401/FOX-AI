@@ -22,16 +22,22 @@ public class SearchEngine {
         }
     }
 
-    public void search(Document query, double similarityThreshold){
-        Document mostRelevant = null;
+    public Document search(Document query, double similarityThreshold){
+        Document mostRelevantDocument = null;
         double currentMaxSimilarityScore = 0.0;
         for (Document document: documents) {
-            double similarityScore = similarityCalculator.getCosineSimilarityScore(query,document);
+            if(document.getRawSentences().size()<query.getRawSentences().size())
+                continue;
+            List<String> currentDialogues = document.getRawSentences().subList(0, query.getRawSentences().size()-1);
+            Document slicedDocument = new Document(currentDialogues);
+            double similarityScore = similarityCalculator.getCosineSimilarityScore(query,slicedDocument);
             if(similarityScore>=similarityThreshold && currentMaxSimilarityScore < similarityScore){
-                mostRelevant = document;
+                mostRelevantDocument = document;
                 currentMaxSimilarityScore = similarityScore;
             }
         }
+        System.out.println(mostRelevantDocument);
+        return mostRelevantDocument;
     }
 
 
