@@ -6,4 +6,5 @@ import java.util.List;
 public class Conversation {
 
     public List<List<String>>conversations = new ArrayList<>();
+    
 }
