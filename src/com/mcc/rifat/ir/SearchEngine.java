@@ -1,6 +1,6 @@
 package com.mcc.rifat.ir;
 
-import com.mcc.rifat.model.Conversation;
+import com.mcc.rifat.model.ConversationJsonModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,13 +10,13 @@ public class SearchEngine {
     private List<Document>documents = new ArrayList<Document>();
     private SimilarityCalculator similarityCalculator = new SimilarityCalculator();
 
-    public SearchEngine(Conversation conversation){
+    public SearchEngine(ConversationJsonModel conversationJsonModel){
 
-        generateDocuments(conversation);
+        generateDocuments(conversationJsonModel);
     }
 
-    private void generateDocuments(Conversation conversation){
-        for (List<String> dialogue : conversation.conversations) {
+    private void generateDocuments(ConversationJsonModel conversationJsonModel){
+        for (List<String> dialogue : conversationJsonModel.conversations) {
             Document document = new Document(dialogue);
             documents.add(document);
         }

@@ -1,14 +1,14 @@
 package com.mcc.rifat.data;
 
-import com.mcc.rifat.model.Conversation;
+import com.mcc.rifat.model.ConversationJsonModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DataLoader {
 
-    public List<Conversation> loadConversationFile(String filePath){
-        List<Conversation>conversations = new ArrayList<Conversation>();
-        return conversations;
+    public List<ConversationJsonModel> loadConversationFile(String filePath){
+        List<ConversationJsonModel> conversationJsonModels = new ArrayList<ConversationJsonModel>();
+        return conversationJsonModels;
     }
 }
